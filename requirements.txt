@@ -1,5 +1,4 @@
 streamlit
 streamlit-vis-timeline
 geocoder # for my posiution
-base64
 numpy

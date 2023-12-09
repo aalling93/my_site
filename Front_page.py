@@ -14,8 +14,6 @@ from utils.achievement import (
 )
 
 
-
-
 from utils.TEXT import *
 from utils.CONSTANTS import *
 
@@ -24,7 +22,6 @@ st.image(
     caption="Sunrise by the mountains",
     use_column_width="always",
 )
-
 
 
 st.title("Kristian Aalling Sørensen")
