@@ -5,7 +5,7 @@
 #
 
 import streamlit as st
-from streamlit_timeline import st_timeline
+#from streamlit_timeline import st_timeline
 from utils.achievement import (
     show_achievement_details,
     show_work_experience,
