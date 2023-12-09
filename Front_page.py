@@ -18,7 +18,7 @@ from utils.TEXT import *
 from utils.CONSTANTS import *
 
 st.image(
-    "/Users/kaaso/Documents/coding/portfolio/src/my_site/figures/banners/watercolour/watercolour1.png",
+    "figures/banners/watercolour/watercolour1.png",
     caption="Sunrise by the mountains",
     use_column_width="always",
 )
