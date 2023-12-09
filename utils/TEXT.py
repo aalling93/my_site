@@ -120,10 +120,10 @@ education_data = [
         "link": "https://www.dtu.dk/english",
         "extra_info": "Collaboration with the Danish Defense. Nine peer-reviewed publications.",
         "images": [
-            "/Users/kaaso/Documents/coding/portfolio/src/my_site/figures/banners/watercolour/watercolour5.png"
+            "figures/banners/watercolour/watercolour5.png"
         ],
         "files": [
-            "/Users/kaaso/Documents/coding/portfolio/src/my_site/files/Letter of intent.pdf"
+            ""
         ],
         "skills": ["AI", "Satellite Imagery", "Data Analysis"],
     },
