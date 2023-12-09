@@ -1,4 +1,1 @@
 streamlit
-streamlit-vis-timeline
-geocoder # for my posiution
-numpy
