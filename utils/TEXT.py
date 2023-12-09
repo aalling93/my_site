@@ -1,9 +1,16 @@
-about_me = """  Ahoy there! 👋 I'm Kristian, a maritime AI enthusiast sailing through the vast oceans of data 
-        to uncover hidden treasures. At the helm of my research at the Center for Security at DTU, 
-        I navigate the complexities of satellite imagery and dark vessel detection. 
-        Think of me as your maritime detective, using AI to keep the seas safe and secure.
-        Dive in and explore my portfolio, where technology meets the high seas!
-    """
+about_me ="""  
+I'm Kristian. 
+In the vast and mysterious ocean of data, I captain my research vessel at the Center for Security at DTU. 
+My passion? Unraveling the secrets hidden in satellite imagery and illuminating the shadowy world of dark vessel detection.
+
+With an anchor in AI and a compass guided by innovation, my journey is all about making the maritime realm safer and smarter. 
+Picture me as your digital maritime detective, where algorithms and ocean waves meet to safeguard our seas.
+
+Whether charting new courses in artificial intelligence or diving deep into the depths of data analysis, 
+my portfolio is a testament to a voyage where technology harmonizes with the rhythm of the waves. 
+Come aboard and let's set sail on an expedition where each discovery is a step towards a safer maritime future!"
+"""
+
 
 
 # Sample data for Work Experience
@@ -13,11 +20,11 @@ work_experiences = [
         "role": "Founder, CEO, & CSO",
         "period": "Nov 2023 -- Ongoing",
         "bullet_points": [
-            "Led the \$5 billion acquisition of the company",
-            "Acquired Tumblr for \$1.1 billion, moving the company's blog there",
+            "In charge of business plan, funding, and execution",
+            "In charge of sensor implementation and fusion",
         ],
         "more_info": "Spearheading major initiatives at Tordenskjold ApS.",
-        "link": "https://tordenskjoldaps.example.com",
+        "link": "http://tordenskjold.space",
         "uploaded_info": None,
     },
     {
@@ -107,6 +114,22 @@ achievements = {
     # Add more achievements here
 }
 
+# Sample data for Achievements
+Hobies = {
+    "💰 NATO Early Career Award 2023": "Awarded for outstanding contributions in the field of maritime surveillance and AI.",
+    "ESA Business Incubation Launchpad 2020 Winner": "Recognized for innovative solutions in satellite data analysis and application.",
+    # Add more achievements here
+}
+
+contact_info = {
+    "LinkedIn": "https://www.linkedin.com/in/ksoerensen",
+    "Facebook": None,
+    "ORCID": "https://orcid.org/your-orcid-id",
+    "Email": "mailto:your.email@example.com",
+    "GitHub": "https://github.com/aalling93",
+    "Website": "https://www.yourwebsite.com"
+}
+
 
 education_data = [
     {
@@ -170,3 +193,31 @@ education_data = [
         "skills": ["Cross-cultural Communication", "Engineering"],
     },
 ]
+
+
+
+free_time_shortnames = ['Read', 'Code', 'Run', 'Game', 'Cook']
+free_time_times = [2, 5, 1, 3, 2]
+free_time_descriptions = ["Reading Books", "Coding Projects", "Running in Park", "Gaming with Friends Gaming with Friends Gaming with Friends Gaming with Friends", "Cooking New Recipes"]
+
+
+
+
+
+# Define your language skills
+languages = {
+    "Danish": 1.0,  # Full proficiency
+    "English": 1.0, # Full proficiency
+    "German": 0.6   # 3/5 proficiency
+}
+
+
+
+
+
+# Define your language skills
+techKills = {
+    "Python": 0.8,  # Full proficiency
+    "Julia": 0.6, # Full proficiency
+    "SQL": 0.4   # 3/5 proficiency
+}

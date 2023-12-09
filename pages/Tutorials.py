@@ -4,10 +4,22 @@ import streamlit as st
 import importlib
 
 
+st.set_page_config(page_title = "tutorials", layout="wide")
+
+
+st.image(
+    "figures/banners/watercolour/watercolour2.png",
+    caption="",
+    use_column_width="always",
+)
+st.title("Tutorials")
+
+
+
 st.sidebar.title("Tutorial")
 st.sidebar.markdown("## Select a tutorial")
 app_mode = st.sidebar.selectbox(
-    "", ["Roboflow Annotation", "AI Projects", "Projects", "Tutorials", "Front Page"]
+    "", ["Tutorials","Roboflow Annotation", "AI Projects", "Projects",  "Front Page"]
 )
 
 tutorial_modules = {
@@ -63,7 +75,7 @@ tutorials = [
 ]
 
 # Page title and some introductory text
-st.title("Tutorials")
+
 st.write(
     "Welcome to the tutorials page! Here you can find various tutorials on different topics."
 )

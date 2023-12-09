@@ -1,9 +1,20 @@
 import streamlit as st
 
 
-st.set_page_config(page_title="Kristian Aalling Sørensen - Satellite AI Expert", page_icon="🛰️")
-st.markdown("# somthing")
-st.sidebar.markdown("# something 2")
+
+st.set_page_config(page_title = "project", layout="wide")
+
+
+st.image(
+    "figures/banners/watercolour/watercolour3.png",
+    caption="",
+    use_column_width="always",
+)
+st.title("project")
+
+
+
+
 
 
 

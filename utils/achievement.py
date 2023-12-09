@@ -2,6 +2,33 @@ import streamlit as st
 from .CONSTANTS import *
 from .TEXT import *
 
+import streamlit as st
+import plotly.graph_objects as go
+from matplotlib.colors import to_rgba
+
+# Function to generate darker shades of a color
+def generate_color_shades(main_color, num_shades, transparency=0.8):
+    rgba = to_rgba(main_color)
+    return [
+        f"rgba({int(rgba[0] * 255 * (1 - i / num_shades))}, {int(rgba[1] * 255 * (1 - i / num_shades))}, {int(rgba[2] * 255 * (1 - i / num_shades))}, {transparency})"
+        for i in range(num_shades)
+    ]
+
+# Function to create a wheel chart with hover descriptions
+def create_wheel_chart(shortnames, times, descriptions, main_color):
+    num_activities = len(shortnames)
+    color_shades = generate_color_shades(main_color, num_activities)
+
+    fig = go.Figure(data=[go.Pie(labels=shortnames, values=times, text=shortnames, hoverinfo='label+percent+text', hole=.3, hovertext=descriptions, marker=dict(colors=color_shades))])
+
+    fig.update_layout(
+        annotations=[dict(text='', x=0.5, y=0.5, font_size=20, showarrow=False)],
+        showlegend=False
+    )
+
+    return fig
+
+
 
 def click_button():
     st.session_state.clicked = True
@@ -127,3 +154,18 @@ def text_to_color(text, color):
     Return text wrapped in HTML with specified color.
     """
     return f"<span style='color: {color};'>{text}</span>"
+
+
+def print_info(info_list):
+    """
+    Display text and images in Streamlit from a given list.
+    Text is displayed as markdown and images are displayed with st.image.
+    """
+    for item in info_list:
+        # Check if the item is an image
+        if any(item.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.gif']):
+            # Display the image
+            st.image(item)
+        else:
+            # Display the text
+            st.markdown(item)
