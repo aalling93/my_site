@@ -1,19 +1,28 @@
 about_me ="""  
-I'm Kristian. 
-In the vast and mysterious ocean of data, I captain my research vessel at the Center for Security at DTU. 
-My passion? Unraveling the secrets hidden in satellite imagery and illuminating the shadowy world of dark vessel detection.
+Hello there! I'm currently immersed in the fascinating world of maritime surveillance and security as a PhD researcher at the Center for Security, National Space Institute of Denmark, at the Technical University of Denmark. My daily adventures involve delving into, e.g., satellite data and AI to detect and analyze vessels, especially those elusive ones without their AIS transponders on.
 
-With an anchor in AI and a compass guided by innovation, my journey is all about making the maritime realm safer and smarter. 
-Picture me as your digital maritime detective, where algorithms and ocean waves meet to safeguard our seas.
+My role is a blend of detective and tech wizardry: I capture satellite images and DAS measurements, identify ships (with a keen eye for the 'dark' ones), and predict their movements and states using the power of AI. In simpler words, I'm a bit like a maritime sleuth, using cutting-edge technology to ensure the safety and security of our seas.
 
-Whether charting new courses in artificial intelligence or diving deep into the depths of data analysis, 
-my portfolio is a testament to a voyage where technology harmonizes with the rhythm of the waves. 
-Come aboard and let's set sail on an expedition where each discovery is a step towards a safer maritime future!"
+When I'm not tracking ships or decoding data, I enjoy the challenges of programming, mainly in Python and occasionally in Julia. My approach to coding is all about efficiency, clarity, and thorough testing – ensuring that every line of code is as reliable as it is understandable.
+
+
+
+When I step away from my desk, I'm equally passionate about immersing myself in the great outdoors. Whether it's hiking through serene landscapes, sailing on the open sea, or just enjoying a quiet evening under the stars, I find these moments perfect for recharging and finding inspiration.
+
+I'm a firm believer in the balance of mind and body, so staying active is important to me. Be it a morning run, a weekend bike ride, or just a stroll through the park, staying physically active helps keep my mind sharp and focused.
+
+That's a little about me – a maritime security researcher, nature lover, coding enthusiast, bookworm, and fitness advocate. I'm always on the lookout for new adventures, both in my professional field and in life!
+
+
+
+(This description was made by ChatGPT 4.0 )
 """
 
 
 
-# Sample data for Work Experience
+########################################
+########## WORK EXPERIENCE  ########
+########################################
 work_experiences = [
     {
         "title": "Tordenskjold ApS",
@@ -21,7 +30,7 @@ work_experiences = [
         "period": "Nov 2023 -- Ongoing",
         "bullet_points": [
             "In charge of business plan, funding, and execution",
-            "In charge of sensor implementation and fusion",
+            "Handle sensor implementation and data fusion (onboarding new satellites)",
         ],
         "more_info": "Spearheading major initiatives at Tordenskjold ApS.",
         "link": "http://tordenskjold.space",
@@ -30,25 +39,33 @@ work_experiences = [
     {
         "title": "DTU Space",
         "role": "PhD Researcher in Maritime Surveillance",
-        "period": "Oct 2021 -- Ongoing",
+        "period": "Jun 2021 -- Ongoing",
         "bullet_points": [
             "Specializing in AI and satellite data for maritime surveillance",
             "Collaboration with Danish Defense on security enhancements",
         ],
         "more_info": "In-depth research and analysis in maritime AI applications.",
-        "link": "https://dtuspace.example.com",
+        "link": "https://www.space.dtu.dk/english/",
         "uploaded_info": None,
     },
     {
-        "title": "PVSite",
-        "role": "Founder",
-        "period": "2020 -- 2021",
+        "title": "Visiting Researcher",
+        "role": "C-CORE Canada",
+        "period": "Aug 2023 - Dec 2023",
         "bullet_points": [
-            "Specializing in AI and satellite data for maritime surveillance",
-            "Collaboration with Danish Defense on security enhancements",
         ],
-        "more_info": "In-depth research and analysis in maritime AI applications.",
-        "link": "https://dtuspace.example.com",
+        "more_info": ".",
+        "link": "https://c-core.ca",
+        "uploaded_info": None,
+    },
+    {
+        "title": "Visiting Researcher",
+        "role": "Vake Norway",
+        "period": "Aug 2021",
+        "bullet_points": [
+        ],
+        "more_info": "",
+        "link": "",
         "uploaded_info": None,
     },
     {
@@ -60,7 +77,7 @@ work_experiences = [
             "Pioneered applications for earth observation and analysis",
         ],
         "more_info": "Leading development of geo-spatial solutions at Rebel Maps.",
-        "link": "https://rebelmaps.example.com",
+        "link": None,
         "uploaded_info": None,
     },
     {
@@ -72,8 +89,8 @@ work_experiences = [
             "Assisted in theoretical explanation of complex topics",
         ],
         "more_info": "Educational role with a focus on planetary sciences.",
-        "link": "https://dtuspace.example.com",
-        "uploaded_info": "Planetary_Physics_Teaching_Materials.pdf",
+        "link": "https://kurser.dtu.dk/course/30142",
+        "uploaded_info": None,
     },
     {
         "title": "Army Engineer Regiment, Denmark",
@@ -84,21 +101,29 @@ work_experiences = [
             "Conducted training in geospatial data and nuclear prevention",
         ],
         "more_info": "Leadership role in the Danish Army Engineer Regiment.",
-        "link": "https://danishdefense.example.com",
-        "uploaded_info": "Army_Leadership_Experience.pdf",
+        "link": "https://www.forsvaret.dk/da/organisation/haeren/ingenioerregimentet/",
+        "uploaded_info": None,
     },
 ]
 
 
+
+
+
+########################################
+########## VOLUNTEER  ########
+########################################
+
+
 volunteer_works = [
     {
-        "title": "Vice Chairman",
+        "title": "Vice Chairman - PhD comitee",
         "year": "2021-2023",
-        "description": "Contributed to the committee at DTU Space, reviewing and accepting proposals.",
+        "description": "Was Vice Chairman of the PhD committee at DTU Space for two years. The PhD comittee should review and accept PhD propasal and candiates. It furthermore leads the PhD education and it aprt of the planing of new actions and directions. The Chariman was Professor Per Knudsen.",
         "icon": "fa-chair",
     },
     {
-        "title": "Co-founder and Board Member",
+        "title": "Co-founder and Board Member - danSTAR",
         "year": "2015",
         "description": "Co-founded the Danish Student Association for Rocketry, fostering space research among students.",
         "icon": "fa-rocket",
@@ -106,29 +131,50 @@ volunteer_works = [
     # Add more volunteer work here
 ]
 
+########################################
+########## ACHIEVMENTS  ########
+########################################
 
-# Sample data for Achievements
+
 achievements = {
-    "💰 NATO Early Career Award 2023": "Awarded for outstanding contributions in the field of maritime surveillance and AI.",
-    "ESA Business Incubation Launchpad 2020 Winner": "Recognized for innovative solutions in satellite data analysis and application.",
-    # Add more achievements here
+    "NATO Early Career Award 2024": "The NATO Early Career Award is awared to one outsanding researcher yearly by NATO Science & Technology Organization (STO). It will be awarded in May 2024. I was awarded for outstanding contributions in the field of maritime surveillance and AI. ",
+    "ESA Business Incubation Launchpad 2020 Winner - Winner": "Recognized for innovative solutions in satellite data analysis and application. See https://www.startuplaunchpad.space",
+    "Founders of Tomorrow 2020 - Winnder": "Recognized for innovative solutions in satellite data analysis and application, see https://foundersoftomorrow.com.",
+    "KAIST Global Entrepreneurships Camp 2019 - Winner": "Recognized for innovative solutions in satellite data analysis and application."
 }
 
-# Sample data for Achievements
+
+########################################
+##########  HOBVIES ########
+########################################
+
+
 Hobies = {
-    "💰 NATO Early Career Award 2023": "Awarded for outstanding contributions in the field of maritime surveillance and AI.",
-    "ESA Business Incubation Launchpad 2020 Winner": "Recognized for innovative solutions in satellite data analysis and application.",
-    # Add more achievements here
+    "NATO Early Career Award 2023": "Awarded for outstanding contributions in the field of maritime surveillance and AI.",
+
 }
+
+
+########################################
+########## CONTACT INFO   ########
+########################################
+
 
 contact_info = {
     "LinkedIn": "https://www.linkedin.com/in/ksoerensen",
     "Facebook": None,
-    "ORCID": "https://orcid.org/your-orcid-id",
-    "Email": "mailto:your.email@example.com",
+    "ORCID": "https://orcid.org/0000-0001-6443-1297",
+    "Email": "mailto:kaaso@space.dtu.dk",
     "GitHub": "https://github.com/aalling93",
-    "Website": "https://www.yourwebsite.com"
+    "Website": "https://www.tordenskjold.space",
+    "DTU Orbit": "https://orbit.dtu.dk/en/persons/kristian-aalling-sørensen"
 }
+
+
+
+########################################
+########## EDUCATION DATA  ########
+########################################
 
 
 education_data = [
@@ -137,42 +183,57 @@ education_data = [
         "education": "PhD in Maritime Surveillance with Satellites and AI",
         "university": "DTU Space, Denmark",
         "gpa": "N/A",
-        "bullets": ["got 200 mil in funding", "something"],
+        "bullets": [],
         "focus": "Maritime Surveillance and Security using Satellite data and Artificial Intelligence",
-        "thesis": "Predicting the trajectory and behavior of non-cooperative vessels",
+        "thesis": "",
         "link": "https://www.dtu.dk/english",
-        "extra_info": "Collaboration with the Danish Defense. Nine peer-reviewed publications.",
+        "extra_info": "Collaboration with the Danish Defense. Eight peer-reviewed publications.",
         "images": [
             "figures/banners/watercolour/watercolour5.png"
         ],
         "files": [
             ""
         ],
-        "skills": ["AI", "Satellite Imagery", "Data Analysis"],
+        "skills": ["Maritime Awareness", "Applied AI", "Research"],
     },
     {
         "year": "2018 - 2021",
-        "education": "MSc in Earth and Space Physics and Engineering",
+        "education": "MSc. Eng. in Earth and Space Physics and Engineering",
         "university": "Technical University of Denmark",
         "gpa": "11.6/12",
-        "bullets": ["got 200 mil in funding", "something"],
+        "bullets": [],
         "focus": "Earth Observation",
         "thesis": "Deep Learning for Anomalous Behavior Detection in AIS Data",
-        "link": "https://www.dtu.dk/english",
+        "link": "https://www.dtu.dk/english/education/graduate/msc-programmes/earth-and-space-physics-and-engineering",
         "extra_info": "Specialized in advanced methods to derive physical information from satellite data.",
         "images": [],
         "files": [],
         "skills": ["Deep Learning", "Data Analytics", "Satellite Imagery"],
     },
+     {
+        "year": "2019",
+        "education": "MSc. in Engineering",
+        "university": "Univeristy of British Columbia",
+        "gpa": "A",
+        "bullets": [],
+        "focus": "Computer Science",
+        "thesis": "N/A",
+        "link": "https://www.ubc.ca/",
+        "extra_info": "Acquired general skills for big data analysis and management, including information theory, SQL, and database management.",
+        "images": [],
+        "files": [],
+        "skills": ["Information theory", "SQL", "Database mangement"],
+    },
+
     {
         "year": "2015 - 2018",
         "education": "BSc in Earth and Space Physics and Engineering",
         "university": "Technical University of Denmark",
         "gpa": "8/12",
-        "bullets": ["got 200 mil in funding", "something"],
-        "focus": "Data Modelling and Analysis",
+        "bullets": [],
+        "focus": "Data Modelling and Analysis in Physics",
         "thesis": "Simulation of Particle Accelerators",
-        "link": "https://www.dtu.dk/english",
+        "link": "https://www.dtu.dk/english/education/undergraduate/undergraduate-programmes-in-danish/bsc-eng-programmes/earth-and-space-physics-and-engineering",
         "extra_info": "Focus on theoretical subjects like electromagnetism, thermodynamics, and programming.",
         "images": [],
         "files": [],
@@ -182,8 +243,8 @@ education_data = [
         "year": "2017",
         "education": "Exchange Student in General Engineering",
         "university": "POSTECH, South Korea",
-        "gpa": "A Grade",
-        "bullets": ["got 200 mil in funding", "something"],
+        "gpa": "A",
+        "bullets": [],
         "focus": "International Perspective in Engineering",
         "thesis": "N/A",
         "link": "https://www.postech.ac.kr/eng",
@@ -196,23 +257,33 @@ education_data = [
 
 
 
-free_time_shortnames = ['Read', 'Code', 'Run', 'Game', 'Cook']
-free_time_times = [2, 5, 1, 3, 2]
-free_time_descriptions = ["Reading Books", "Coding Projects", "Running in Park", "Gaming with Friends Gaming with Friends Gaming with Friends Gaming with Friends", "Cooking New Recipes"]
+########################################
+########## A DAY IN MY LIFE ########
+########################################
 
 
 
+free_time_shortnames = ['Sleep', 'Eat', 'Exercise', 'Coding', 'Hiking', "Movies"]
+free_time_times = [5, 1, 2, 3, 2, 2]
+free_time_descriptions = ["", "", "", "", "", ""]
 
+
+
+########################################
+########## LANGUAGES  ########
+########################################
 
 # Define your language skills
 languages = {
     "Danish": 1.0,  # Full proficiency
     "English": 1.0, # Full proficiency
-    "German": 0.6   # 3/5 proficiency
+    "German": 0.4   # 3/5 proficiency
 }
 
 
-
+########################################
+########## SKILLS ########
+########################################
 
 
 # Define your language skills

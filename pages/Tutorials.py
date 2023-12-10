@@ -9,10 +9,10 @@ st.set_page_config(page_title = "tutorials", layout="wide")
 
 st.image(
     "figures/banners/watercolour/watercolour2.png",
-    caption="",
+    caption="Credit: Kristian Aalling Sørensen",
     use_column_width="always",
 )
-st.title("Tutorials")
+st.title("Placeholder page. Not implemented..")
 
 
 

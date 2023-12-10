@@ -60,7 +60,9 @@ def show_volunteer_work(title, year, description, icon, color):
     st.markdown(
         f"<p style='color: gray; margin-top:0;'>{year}</p>", unsafe_allow_html=True
     )
-    st.write(description)
+    with st.expander("More info"):
+        if description:
+            st.write(description)
 
 
 def show_education_entry(
@@ -167,5 +169,23 @@ def print_info(info_list):
             # Display the image
             st.image(item)
         else:
+           if item:
+               st.write(item)
+            
+def print_project_info(info_list):
+    """
+    Display text and images in Streamlit from a given list.
+    Text is displayed as markdown and images are displayed with st.image.
+    """
+    for item in info_list:
+        # Check if the item is an image
+        if any(item.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.gif']):
+            # Display the image
+            st.image(item)
+        else:
             # Display the text
-            st.markdown(item)
+            with st.expander("See abstract"):
+                if item:
+                    st.markdown(item)
+                    #st.write(item)
+            

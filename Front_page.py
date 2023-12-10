@@ -28,8 +28,11 @@ colStart1,colStart2 = st.columns([0.8,0.2])
 
 
 with colStart1:
-    st.subheader("Some would even call me a Satellite and AI Expert")
     st.write(about_me)
+    st.write("Still under construction")
+
+with colStart2:
+    st.image("figures/portraet.png", caption="Kristian Aalling Sørensen",)
 
 
 col0, col1, col2, col3, = st.columns([0.2, 0.7, 0.2, 0.2])
