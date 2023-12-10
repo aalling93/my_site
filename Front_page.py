@@ -5,16 +5,26 @@ from utils.achievement import (
     show_volunteer_work,
     show_education_entry,
     create_wheel_chart,
-    text_to_color
+    text_to_color,
 )
-from utils.TEXT import *
-from utils.CONSTANTS import *
-import streamlit as st
-import json
+from utils.TEXT import (
+    about_me,
+    achievements,
+    work_experiences,
+    education_data,
+    languages,
+    techKills,
+    contact_info,
+    volunteer_works,
+    free_time_shortnames,
+    free_time_times,
+    free_time_descriptions,
+)
+from utils.CONSTANTS import EXTRA_TEXT_COLOR, HEADLINES_COLOR, DIVIDER
 
 
 # Starting the page.
-st.set_page_config(page_title = "home page", layout="wide")
+st.set_page_config(page_title="home page", layout="wide")
 
 
 st.image(
@@ -24,25 +34,35 @@ st.image(
 )
 st.title("Kristian Aalling Sørensen")
 
-colStart1,colStart2 = st.columns([0.8,0.2])
-
+colStart1, colStart2 = st.columns([0.8, 0.2])
 
 
 with colStart1:
     st.write(about_me)
     st.write("Still under construction")
     st.write(f"{DIVIDER(height=0.2,dot_spacing=40)}", unsafe_allow_html=True)
-    
+
 
 with colStart2:
-    st.image("figures/portraet.png", caption="Kristian Aalling Sørensen",)
+    st.image(
+        "figures/portraet.png",
+        caption="Kristian Aalling Sørensen",
+    )
     st.markdown(
-            text_to_color(f"DISCALIMER. This website is mostly about me advertaining myself.   ", EXTRA_TEXT_COLOR),
-            unsafe_allow_html=True,
-        )
+        text_to_color(
+            "DISCALIMER. This website is mostly about me advertaining myself.",
+            EXTRA_TEXT_COLOR,
+        ),
+        unsafe_allow_html=True,
+    )
 
 
-col0, col1, col2, col3, = st.columns([0.2, 0.7, 0.2, 0.2])
+(
+    col0,
+    col1,
+    col2,
+    col3,
+) = st.columns([0.2, 0.7, 0.2, 0.2])
 col0, col12, col22, col3 = st.columns([0.2, 0.9, 0.3, 0.2])
 
 with col1:
@@ -85,23 +105,15 @@ with col12:
         st.write(f"{DIVIDER(height=0.2,dot_spacing=40)}", unsafe_allow_html=True)
 
 
-
-
-
-
-
 with col12:
     st.title("In my free time")
-    fig = create_wheel_chart(free_time_shortnames, free_time_times, free_time_descriptions, "blue")
+    fig = create_wheel_chart(
+        free_time_shortnames, free_time_times, free_time_descriptions, "blue"
+    )
     st.plotly_chart(fig)
 
 
-
-col21, coll22, col23, col24 , col25 = st.columns([0.1, 0.33, 0.11, 0.33, 0.1])
-
-
-
-
+col21, coll22, col23, col24, col25 = st.columns([0.1, 0.33, 0.11, 0.33, 0.1])
 
 
 with coll22:
@@ -122,12 +134,6 @@ with col24:
         st.progress(proficiency)
 
 
-
-
-
-
-
-
 # Generate footer content based on contact info
 def generate_footer(contact_info):
     footer_links = []
@@ -135,7 +141,7 @@ def generate_footer(contact_info):
         if url:
             link_html = f"<a href='{url}' target='_blank'>{platform}</a>"
             footer_links.append(link_html)
-    
+
     links_str = " | ".join(footer_links)
     footer_content = f"""
     <div style='background-color: lightgrey; padding: 10px; border-radius: 5px; text-align: center;'>
@@ -154,9 +160,3 @@ def generate_footer(contact_info):
 # Display footer
 footer_html = generate_footer(contact_info)
 st.markdown(footer_html, unsafe_allow_html=True)
-
-
-
-
-
-

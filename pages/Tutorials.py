@@ -1,10 +1,7 @@
-# from tutorial_tabs import roboflow_annotation as roboflow_tab
-# Your Streamlit app code for dynamically loading tutorials
 import streamlit as st
-import importlib
+from utils.achievement import run_tutorial_module, display_tutorial
 
-
-st.set_page_config(page_title = "tutorials", layout="wide")
+st.set_page_config(page_title="tutorials", layout="wide")
 
 
 st.image(
@@ -14,23 +11,19 @@ st.image(
 )
 st.title("Placeholder page. Not implemented..")
 
+st.write("Page for tutorials, theory, and other stuff")
 
 
-st.sidebar.title("Tutorial")
-st.sidebar.markdown("## Select a tutorial")
+st.sidebar.title("Pages")
+st.sidebar.markdown("## Select a pages")
 app_mode = st.sidebar.selectbox(
-    "", ["Tutorials","Roboflow Annotation", "AI Projects", "Projects",  "Front Page"]
+    "", ["Roboflow Annotation", "AI Projects", "Projects", "Front Page"]
 )
 
 tutorial_modules = {
     "Roboflow Annotation": "pages.tutorial_tabs.roboflow_annotation",
     # Add other mappings for your tutorials
 }
-
-
-def run_tutorial_module(module_name):
-    module = importlib.import_module(module_name)
-    module.run()
 
 
 if app_mode in tutorial_modules:
@@ -80,11 +73,8 @@ st.write(
     "Welcome to the tutorials page! Here you can find various tutorials on different topics."
 )
 
-# Function to display a single tutorial in a grid
-def display_tutorial(image, description):
-    with st.container():
-        st.image(image, width=150)  # Adjust width as needed
-        st.write(description)
+
+st.title("Tutorials..")
 
 
 # Create a 4xN grid

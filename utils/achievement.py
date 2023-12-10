@@ -1,10 +1,8 @@
 import streamlit as st
-from .CONSTANTS import *
-from .TEXT import *
-
-import streamlit as st
+from .CONSTANTS import HEADLINES_COLOR
 import plotly.graph_objects as go
 from matplotlib.colors import to_rgba
+import importlib
 
 # Function to generate darker shades of a color
 def generate_color_shades(main_color, num_shades, transparency=0.8):
@@ -14,20 +12,48 @@ def generate_color_shades(main_color, num_shades, transparency=0.8):
         for i in range(num_shades)
     ]
 
+
+# Function to display a single tutorial in a grid
+def display_tutorial(image, description):
+    with st.container():
+        st.image(image, width=150)  # Adjust width as needed
+        st.write(description)
+
+
+
+def run_tutorial_module(module_name):
+    module = importlib.import_module(module_name)
+    module.run()
+
+
+
+
+
 # Function to create a wheel chart with hover descriptions
 def create_wheel_chart(shortnames, times, descriptions, main_color):
     num_activities = len(shortnames)
     color_shades = generate_color_shades(main_color, num_activities)
 
-    fig = go.Figure(data=[go.Pie(labels=shortnames, values=times, text=shortnames, hoverinfo='label+percent+text', hole=.3, hovertext=descriptions, marker=dict(colors=color_shades))])
+    fig = go.Figure(
+        data=[
+            go.Pie(
+                labels=shortnames,
+                values=times,
+                text=shortnames,
+                hoverinfo="label+percent+text",
+                hole=0.3,
+                hovertext=descriptions,
+                marker=dict(colors=color_shades),
+            )
+        ]
+    )
 
     fig.update_layout(
-        annotations=[dict(text='', x=0.5, y=0.5, font_size=20, showarrow=False)],
-        showlegend=False
+        annotations=[dict(text="", x=0.5, y=0.5, font_size=20, showarrow=False)],
+        showlegend=False,
     )
 
     return fig
-
 
 
 def click_button():
@@ -165,13 +191,14 @@ def print_info(info_list):
     """
     for item in info_list:
         # Check if the item is an image
-        if any(item.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.gif']):
+        if any(item.endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".gif"]):
             # Display the image
             st.image(item)
         else:
-           if item:
-               st.write(item)
-            
+            if item:
+                st.write(item)
+
+
 def print_project_info(info_list):
     """
     Display text and images in Streamlit from a given list.
@@ -179,7 +206,7 @@ def print_project_info(info_list):
     """
     for item in info_list:
         # Check if the item is an image
-        if any(item.endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.gif']):
+        if any(item.endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".gif"]):
             # Display the image
             st.image(item)
         else:
@@ -187,5 +214,4 @@ def print_project_info(info_list):
             with st.expander("See abstract"):
                 if item:
                     st.markdown(item)
-                    #st.write(item)
-            
+                    # st.write(item)
