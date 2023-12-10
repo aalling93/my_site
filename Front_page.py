@@ -4,7 +4,8 @@ from utils.achievement import (
     show_work_experience,
     show_volunteer_work,
     show_education_entry,
-    create_wheel_chart
+    create_wheel_chart,
+    text_to_color
 )
 from utils.TEXT import *
 from utils.CONSTANTS import *
@@ -30,9 +31,15 @@ colStart1,colStart2 = st.columns([0.8,0.2])
 with colStart1:
     st.write(about_me)
     st.write("Still under construction")
+    st.write(f"{DIVIDER(height=0.2,dot_spacing=40)}", unsafe_allow_html=True)
+    
 
 with colStart2:
     st.image("figures/portraet.png", caption="Kristian Aalling Sørensen",)
+    st.markdown(
+            text_to_color(f"DISCALIMER. This website is mostly about me advertaining myself.   ", EXTRA_TEXT_COLOR),
+            unsafe_allow_html=True,
+        )
 
 
 col0, col1, col2, col3, = st.columns([0.2, 0.7, 0.2, 0.2])
