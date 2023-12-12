@@ -34,6 +34,8 @@ st.image(
 )
 st.title("Kristian Aalling Sørensen")
 
+
+
 colStart1, colStart2 = st.columns([0.8, 0.2])
 
 

@@ -16,8 +16,9 @@ st.write("Page for tutorials, theory, and other stuff")
 
 st.sidebar.title("Pages")
 st.sidebar.markdown("## Select a pages")
+
 app_mode = st.sidebar.selectbox(
-    "", ["Roboflow Annotation", "AI Projects", "Projects", "Front Page"]
+    "", ["Roboflow Annotation", "AI Projects", "Projects", "Front Page"], key="tutorials_selector"
 )
 
 tutorial_modules = {
