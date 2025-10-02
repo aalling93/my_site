@@ -4,6 +4,7 @@ import plotly.graph_objects as go
 from matplotlib.colors import to_rgba
 import importlib
 
+
 # Function to generate darker shades of a color
 def generate_color_shades(main_color, num_shades, transparency=0.8):
     rgba = to_rgba(main_color)
@@ -20,13 +21,9 @@ def display_tutorial(image, description):
         st.write(description)
 
 
-
 def run_tutorial_module(module_name):
     module = importlib.import_module(module_name)
     module.run()
-
-
-
 
 
 # Function to create a wheel chart with hover descriptions
@@ -67,9 +64,7 @@ def show_achievement_details(achievement_title, details):
     if st.button(achievement_title, key=f"button_{achievement_title} details "):
         with st.container():
             st.write(details)
-            if st.button(
-                "Close", key=f"close_{achievement_title}", on_click=click_button
-            ):
+            if st.button("Close", key=f"close_{achievement_title}", on_click=click_button):
                 st.experimental_rerun()
                 st.button("Click me", key=f"click_{achievement_title}")
 
@@ -83,9 +78,7 @@ def show_volunteer_work(title, year, description, icon, color):
         f"<h5 style='margin-bottom:0;'><i class='fas {icon}'></i> {colored_title}</h5>",
         unsafe_allow_html=True,
     )
-    st.markdown(
-        f"<p style='color: gray; margin-top:0;'>{year}</p>", unsafe_allow_html=True
-    )
+    st.markdown(f"<p style='color: gray; margin-top:0;'>{year}</p>", unsafe_allow_html=True)
     with st.expander("More info"):
         if description:
             st.write(description)
@@ -124,9 +117,7 @@ def show_education_entry(
 
     # Expander for showing extra info
     with st.expander("More about"):
-        st.markdown(
-            f"<strong>University:</strong> {university}", unsafe_allow_html=True
-        )
+        st.markdown(f"<strong>University:</strong> {university}", unsafe_allow_html=True)
         st.markdown(f"<strong>GPA:</strong> {gpa}", unsafe_allow_html=True)
         st.markdown(f"<strong>Focus:</strong> {focus}", unsafe_allow_html=True)
         st.markdown(f"<strong>Thesis:</strong> {thesis}", unsafe_allow_html=True)
@@ -148,9 +139,7 @@ def show_education_entry(
                 )
 
 
-def show_work_experience(
-    title, role, period, bullet_points, more_info=None, link=None, uploaded_files=None
-):
+def show_work_experience(title, role, period, bullet_points, more_info=None, link=None, uploaded_files=None):
     """
     Function to display a single work experience entry with additional details.
     """
@@ -172,9 +161,7 @@ def show_work_experience(
                     st.markdown(f"[More Information]({link})")
                 if uploaded_files:
                     for file_name in uploaded_files:
-                        st.write(
-                            file_name
-                        )  # You can modify this to display the files differently
+                        st.write(file_name)  # You can modify this to display the files differently
 
 
 def text_to_color(text, color):

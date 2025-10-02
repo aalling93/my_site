@@ -4,3 +4,4 @@ matplotlib
 streamlit-folium
 folium
 branca
+st-clickable-images

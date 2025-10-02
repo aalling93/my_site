@@ -28,31 +28,28 @@ st.set_page_config(page_title="home page", layout="wide")
 
 
 st.image(
-    "figures/banners/watercolour/watercolour1.png",
+    "figures/banners/watercolour/watercolour3.png",
     caption="Credit: Kristian Aalling Sørensen",
-    use_column_width="always",
+    use_container_width="always",
 )
 st.title("Kristian Aalling Sørensen")
 
-
-
 colStart1, colStart2 = st.columns([0.8, 0.2])
-
 
 with colStart1:
     st.write(about_me)
-    st.write("Still under construction")
+    # st.write("Still under construction")
     st.write(f"{DIVIDER(height=0.2,dot_spacing=40)}", unsafe_allow_html=True)
 
 
 with colStart2:
-    st.image(
-        "figures/portraet.png",
-        caption="Kristian Aalling Sørensen",
-    )
+    # st.image(
+    #    "figures/portraet.png",
+    #    caption="Kristian Aalling Sørensen",
+    # )
     st.markdown(
         text_to_color(
-            "DISCALIMER. This website is mostly about me advertaining myself.",
+            ".",
             EXTRA_TEXT_COLOR,
         ),
         unsafe_allow_html=True,
@@ -65,7 +62,7 @@ with colStart2:
     col2,
     col3,
 ) = st.columns([0.2, 0.7, 0.2, 0.2])
-col0, col12, col22, col3 = st.columns([0.2, 0.9, 0.3, 0.2])
+col0, col12, col22, col3 = st.columns([0.01, 0.9, 0.01, 0.2])
 
 with col1:
     st.title("Work Experience")
@@ -82,7 +79,7 @@ with col1:
 
 
 with col2:
-    st.subheader("My Achievements")
+    st.subheader("Honors")
     # Display buttons for each achievement
     for title, details in achievements.items():
         show_achievement_details(title, details)
@@ -109,9 +106,7 @@ with col12:
 
 with col12:
     st.title("In my free time")
-    fig = create_wheel_chart(
-        free_time_shortnames, free_time_times, free_time_descriptions, "blue"
-    )
+    fig = create_wheel_chart(free_time_shortnames, free_time_times, free_time_descriptions, "blue")
     st.plotly_chart(fig)
 
 
@@ -145,8 +140,9 @@ def generate_footer(contact_info):
             footer_links.append(link_html)
 
     links_str = " | ".join(footer_links)
+    st.write(f"{DIVIDER(height=0.2,dot_spacing=40)}", unsafe_allow_html=True)
     footer_content = f"""
-    <div style='background-color: lightgrey; padding: 10px; border-radius: 5px; text-align: center;'>
+    <div style='background-color: white; padding: 10px; border-radius: 5px; text-align: center;'>
         <h4>Contact Information</h4>
         <p>{links_str}</p>
         <h4>Quick Links</h4>

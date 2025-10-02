@@ -1,4 +1,4 @@
-about_me ="""  
+about_me = """  
 Hello there! I'm currently immersed in the fascinating world of maritime surveillance and security as a PhD researcher at the Center for Security, National Space Institute of Denmark, at the Technical University of Denmark. My daily adventures involve delving into, e.g., satellite data and AI to detect and analyze vessels, especially those elusive ones without their AIS transponders on.
 
 My role is a blend of detective and tech wizardry: I capture satellite images and DAS measurements, identify ships (with a keen eye for the 'dark' ones), and predict their movements and states using the power of AI. In simpler words, I'm a bit like a maritime sleuth, using cutting-edge technology to ensure the safety and security of our seas.
@@ -14,10 +14,7 @@ I'm a firm believer in the balance of mind and body, so staying active is import
 That's a little about me – a maritime security researcher, nature lover, coding enthusiast, bookworm, and fitness advocate. I'm always on the lookout for new adventures, both in my professional field and in life!
 
 
-
-(This description was made by ChatGPT 4.0 )
 """
-
 
 
 ########################################
@@ -26,10 +23,10 @@ That's a little about me – a maritime security researcher, nature lover, codin
 work_experiences = [
     {
         "title": "Tordenskjold ApS",
-        "role": "Founder, CEO, & CSO",
-        "period": "Nov 2023 -- Ongoing",
+        "role": "Founder ",
+        "period": "Nov 2023 -- Oct 2025",
         "bullet_points": [
-            "In charge of business plan, funding, and execution",
+            "In charge of business plan, funding, data analysis, AI development, and much more",
             "Handle sensor implementation and data fusion (onboarding new satellites)",
         ],
         "more_info": "Spearheading major initiatives at Tordenskjold ApS.",
@@ -52,8 +49,7 @@ work_experiences = [
         "title": "Visiting Researcher",
         "role": "C-CORE Canada",
         "period": "Aug 2023 - Dec 2023",
-        "bullet_points": [
-        ],
+        "bullet_points": [],
         "more_info": ".",
         "link": "https://c-core.ca",
         "uploaded_info": None,
@@ -62,8 +58,7 @@ work_experiences = [
         "title": "Visiting Researcher",
         "role": "Vake Norway",
         "period": "Aug 2021",
-        "bullet_points": [
-        ],
+        "bullet_points": [],
         "more_info": "",
         "link": "",
         "uploaded_info": None,
@@ -107,9 +102,6 @@ work_experiences = [
 ]
 
 
-
-
-
 ########################################
 ########## VOLUNTEER  ########
 ########################################
@@ -140,7 +132,7 @@ achievements = {
     "NATO Early Career Award 2024": "The NATO Early Career Award is awared to one outsanding researcher yearly by NATO Science & Technology Organization (STO). It will be awarded in May 2024. I was awarded for outstanding contributions in the field of maritime surveillance and AI. ",
     "ESA Business Incubation Launchpad 2020 Winner - Winner": "Recognized for innovative solutions in satellite data analysis and application. See https://www.startuplaunchpad.space",
     "Founders of Tomorrow 2020 - Winnder": "Recognized for innovative solutions in satellite data analysis and application, see https://foundersoftomorrow.com.",
-    "KAIST Global Entrepreneurships Camp 2019 - Winner": "Recognized for innovative solutions in satellite data analysis and application."
+    "KAIST Global Entrepreneurships Camp 2019 - Winner": "Recognized for innovative solutions in satellite data analysis and application.",
 }
 
 
@@ -151,7 +143,6 @@ achievements = {
 
 Hobies = {
     "NATO Early Career Award 2023": "Awarded for outstanding contributions in the field of maritime surveillance and AI.",
-
 }
 
 
@@ -167,9 +158,8 @@ contact_info = {
     "Email": "mailto:kaaso@space.dtu.dk",
     "GitHub": "https://github.com/aalling93",
     "Website": "https://www.tordenskjold.space",
-    "DTU Orbit": "https://orbit.dtu.dk/en/persons/kristian-aalling-sørensen"
+    "DTU Orbit": "https://orbit.dtu.dk/en/persons/kristian-aalling-sørensen",
 }
-
 
 
 ########################################
@@ -189,11 +179,9 @@ education_data = [
         "link": "https://www.dtu.dk/english",
         "extra_info": "Collaboration with the Danish Defense. Eight peer-reviewed publications.",
         "images": [
-            "figures/banners/watercolour/watercolour5.png"
+            # "figures/banners/watercolour/watercolour5.png"
         ],
-        "files": [
-            ""
-        ],
+        "files": [""],
         "skills": ["Maritime Awareness", "Applied AI", "Research"],
     },
     {
@@ -210,7 +198,7 @@ education_data = [
         "files": [],
         "skills": ["Deep Learning", "Data Analytics", "Satellite Imagery"],
     },
-     {
+    {
         "year": "2019",
         "education": "MSc. in Engineering",
         "university": "Univeristy of British Columbia",
@@ -224,7 +212,6 @@ education_data = [
         "files": [],
         "skills": ["Information theory", "SQL", "Database mangement"],
     },
-
     {
         "year": "2015 - 2018",
         "education": "BSc in Earth and Space Physics and Engineering",
@@ -256,17 +243,14 @@ education_data = [
 ]
 
 
-
 ########################################
 ########## A DAY IN MY LIFE ########
 ########################################
 
 
-
-free_time_shortnames = ['Sleep', 'Eat', 'Exercise', 'Coding', 'Hiking', "Movies"]
+free_time_shortnames = ["Sleep", "Eat", "Exercise", "Coding", "Hiking", "Movies"]
 free_time_times = [5, 1, 2, 3, 2, 2]
 free_time_descriptions = ["", "", "", "", "", ""]
-
 
 
 ########################################
@@ -274,11 +258,7 @@ free_time_descriptions = ["", "", "", "", "", ""]
 ########################################
 
 # Define your language skills
-languages = {
-    "Danish": 1.0,  # Full proficiency
-    "English": 1.0, # Full proficiency
-    "German": 0.4   # 3/5 proficiency
-}
+languages = {"Danish": 1.0, "English": 1.0, "German": 0.4}  # Full proficiency  # Full proficiency  # 3/5 proficiency
 
 
 ########################################
@@ -287,8 +267,4 @@ languages = {
 
 
 # Define your language skills
-techKills = {
-    "Python": 0.8,  # Full proficiency
-    "Julia": 0.6, # Full proficiency
-    "SQL": 0.4   # 3/5 proficiency
-}
+techKills = {"Python": 0.8, "Julia": 0.6, "SQL": 0.4}  # Full proficiency  # Full proficiency  # 3/5 proficiency

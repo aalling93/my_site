@@ -5,9 +5,9 @@ st.set_page_config(page_title="tutorials", layout="wide")
 
 
 st.image(
-    "figures/banners/watercolour/watercolour2.png",
+    "figures/banners/watercolour/watercolour3.png",
     caption="Credit: Kristian Aalling Sørensen",
-    use_column_width="always",
+    use_container_width="always",
 )
 st.title("Placeholder page. Not implemented..")
 
@@ -34,38 +34,9 @@ if app_mode in tutorial_modules:
 # Dummy data for tutorials (Replace with your actual data)
 tutorials = [
     {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 1 Description",
+        "image": "figures/banners/watercolour/watercolour3.png",
+        "description": "Delete",
     },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 2 Description",
-    },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 3 Description",
-    },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 4 Description",
-    },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 1 Description",
-    },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 2 Description",
-    },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 3 Description",
-    },
-    {
-        "image": "figures/banners/watercolour/watercolour1.png",
-        "description": "Tutorial 4 Description",
-    },
-    # Add more tutorials as needed
 ]
 
 # Page title and some introductory text
